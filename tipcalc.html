@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+   <script>
+       let service = prompt("How was your service: Type bad, fair or good: ");
+     console.log(service)
+      console.log("The service was " + service);
+      switch(service){
+        case "good":
+            tip = 0.20;
+          break;
+        case "fair":
+          tip = 0.15;
+          break;
+        case "bad":
+          tip = 0.10;
+          break;
+          default :
+          tip = 0;
+      }
+     
+      console.log("Mutiply cost by $" + tip)
+      
+     const cost = prompt("What was the cost of the bill?");
+     console.log("Your bill is $" + cost);
+     const total = Number(cost) * Number(tip) + Number(cost);
+     console.log("Your total is $" + total)
+      
+    </script>
+    </body>
+    </html>
