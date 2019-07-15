@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <script>
+    
+   function hello(name) {
+     return "Hello" + " " +(name)
+     }
+     console.log(hello('Mustache'));
+    
+    
+    function madlib(name2, subject){
+     return name2 + "'s favorite subject is " + subject + "."
+    }
+   console.log(madlib("Jon", "Science"));
+    
+   
+   function tipAmount(){
+      let service = prompt(`How was the service?
+      type bad, fair, or good: `);
+     if (service === 'bad'){
+       service = 0.10;
+     }else if (service === 'fair'){
+       service = 0.15;
+     }else if (service === 'good'){
+       service = 0.2;
+     }else {
+       console.log('Invalid Input');
+     }
+     const bill = prompt("What was the cost? ");
+     const amount = service * bill;
+     const total = amount + Number(bill);
+     console.log("Your total is $" + total + ".");
+     const party = prompt("How many in your party? ");
+     const split = total / party ;
+     console.log("Each person should pay $" + split);
+     
+   }
+    tipAmount()
+  </script>
+</body>
+</html>
